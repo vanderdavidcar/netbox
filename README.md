@@ -20,7 +20,7 @@ auth.py
 In this file, put all variables you need
 
 ## collect_info.py
-Is a function to get any information you need based on the filter specified
+Is a function to get any information you need based on specific filter
 
 ## create_devices_nbdemo.py
 Is a function to create devices on netbox via API, it is important to have all ID of fields to specify on code.
