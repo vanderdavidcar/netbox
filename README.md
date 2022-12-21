@@ -1,4 +1,4 @@
-# netbox-automation
+# netbox
 
 Netbox using Pynetbox
 
@@ -16,30 +16,14 @@ For testing can be used this https://demo.netbox.dev/
 
 ## Variables
 
-config_vars.py
-In this file, put on variables you need and import in each file .py that using credentials.
+auth.py
+In this file, put all variables you need
 
-Token API take on netbox
-api_key = "XXXXXX"
+## collect_info.py
+Is a function to get any information you need based on the filter specified
 
-Create a username and pasword
-nb_username = "netbox"
-nb_password = "XXXXXXXXX"
-nb_url = "https://demo.netbox.dev/"
+## create_devices_nbdemo.py
+Is a function to create devices on netbox via API, it is important to have all ID of fields to specify on code.
 
-## Authentication method
-
-Put api token, URL, username and password informations into variables in config.py file.
-
-## IP/FQDN - DNS
-
-I am using WSL (Windows Subsystem Linux) to tests all codes, so access by SSH was done with FQDN, all devices needed into /etc/hosts, so if you prefer using IP address to connect on devices
-
-To avoid the error below, please make sure you have a DNS of devices in /etc/hosts
-
-raise NetmikoTimeoutException(msg)
-netmiko.ssh_exception.NetmikoTimeoutException: DNS failure--the hostname you provided was not resolvable in DNS: dmi01-akron-rtr01:22
-
-## Netmiko and NAPALM information
-
-There are many files .py split by device version, so I'm  using Netmiko to connect on devices and update certain fields on Netbox, however to stay up-to-date I am using NAPALM too, in this way I have a Source of Truth (SoT)
+## delete_devices_nbdemo.py
+Is a function that will looking for devices based in your filters and according to your answer "yes or not" can remove devices of netbox.
