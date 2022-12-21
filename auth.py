@@ -1,4 +1,6 @@
-# .gitignore should include reference to config.py
+# If you have a sensitive information you must use .gitignore
+# Informations below are public 
+
 import pynetbox
 import urllib3
 urllib3.disable_warnings()
