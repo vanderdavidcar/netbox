@@ -1,8 +1,4 @@
 .env
-add_interface.py
-config.py
-hosts
-ipam*
 devices_*
-*.txt
 auth.py
+update_*
