@@ -26,4 +26,4 @@ Is a function to get any information you need based on specific filter
 Is a function to create devices on netbox via API, it is important to have all ID of fields to specify on code.
 
 ## delete_devices_nbdemo.py
-Is a function that will looking for devices based in your filters and according to your answer "yes or not" can remove devices of netbox.
+Is a function that will looking for devices based on specific filters and according to your answer "yes or not" can remove devices of netbox.
