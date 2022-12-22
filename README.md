@@ -29,4 +29,4 @@ Is a function to create devices on netbox via API, it is important to have all I
 Is a function that will looking for devices based on specific filters and according to your answer "yes or not" can remove devices of netbox.
 
 ## update_cust_fields
-Is a function you can update a custom fields of devices
+Is a function you can update a custom fields in netbox to all devices
