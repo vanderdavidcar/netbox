@@ -11,16 +11,17 @@ def update_cust_fields():
     for vendors in model:
         # Using hostnames in an external file
         with open(f"devices_{vendors}.txt") as f:
-            ios_model = f.read().splitlines()
-        
-        for devices in ios_model:
+            vendors = f.read().splitlines()
 
+        for devices in list_obj:
+            print(devices)
             # Update custom fields "sw_version" using regex information collected
-            devices.custom_fields["sw_version"] = "none"
+            devices["custom_fields"]["tags"] = str("Deployed by python script")
             devices.save()
             print("Hostname: ", devices.name)
             print("Device Type: ", devices.device_type)
             print("sw_version: ", devices.custom_fields["sw_version"])
+            print("Tags: ", devices.custom_fields["tags"])
             print("Current tenant: ", devices.tenant)
-
+    
 update_cust_fields()

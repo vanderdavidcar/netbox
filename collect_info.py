@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 import auth
 
-devices = list(auth.nb.dcim.devices.all())
-
 def collect_info():
     #status_cond = list(nb.dcim.devices.filter(tenant="connect-edge", status="active"))
     status_cond = list(auth.nb.dcim.devices.filter(device_type="mx80"))

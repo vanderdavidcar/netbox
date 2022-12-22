@@ -5,7 +5,7 @@ import pynetbox
 import urllib3
 urllib3.disable_warnings()
 
-nb_demo_apikey = "14dfa057d9a7779bed35afb878674f0c2e3b310d"
+nb_demo_apikey = "fd585028a1668701111f76e447d31baf512e01e4"
 nb_demo_user = "admin"
 nb_demo_pass = "admin"
 nb_demo_url = "https://demo.netbox.dev/"
